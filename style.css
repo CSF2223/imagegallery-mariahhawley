@@ -6,33 +6,18 @@ secondary color: #C69B7B
 tertiary color:  #826F66
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
 
-header {
-    background-color: Blue;
-    margin: 50px;
-    border: 5px solid black;
-    padding: 25px;
+html { 
+    font-size: 62.5%;    /* Default font size is 16px - 62.5% of 16 is 10px - 1 rem (relative unit) now will equivalent to 10px} */
 }
 
-h1 {
-    background-color: crimson;
+body {
+    background-color: #3A3845;
+    color:  #F7CCAC;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
-    background color: #3A3845
-    font color: #F7CCAC      
-    secondary color:  #C69B7B 
-    tertiary color:   #826F66
-    */
-} 
-
-h4 {
-    background-color: lightGreen;
-    margin: 0;
-}   
-
-h6 {
-    background-color: yellow;
-    margin: 0;
-} 
+}
 
 header { 
     margin: 0 4rem;
@@ -45,20 +30,15 @@ header {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
 }
-body {
-    background-color: #3A3845;
-    color:  #F7CCAC;
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-}
 
 cite {
     font-size: 2rem;
 }
-html { 
-    font-size: 62.5%;    /* Default font size is 16px - 62.5% of 16 is 10px - 1 rem (relative unit) now will equivalent to 10px} */
-     
+
+p {
+    font-size: 1.2rem;
 }
+
 
 .imageCard {
     display: flex;
@@ -82,8 +62,29 @@ html {
 .cardText {
     color: #C69B7B;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 30px; 
     margin-top: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+
+@media (min-width: 768px)  {
+    
+    header { 
+        font-size: 1.6rem;
+    }
+
+.gallery { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imageCard {
+    max-width: 28%;
+    }
+}
+    
+    
+    
